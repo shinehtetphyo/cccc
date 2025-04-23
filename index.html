@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You, Ar Luu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe4ec, #e0f7fa);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, section, footer {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background-color: #ff80ab;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #ff4081;
+    }
+    .hearts {
+      animation: float 6s infinite;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    .timeline {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+    .memory {
+      margin: 1rem 0;
+      background: #fff5f8;
+      padding: 1rem;
+      border-left: 4px solid #ff80ab;
+      border-radius: 10px;
+    }
+    .stars {
+      background: black;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .stars p {
+      max-width: 600px;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi Ar Luu,</h1>
+    <h2>I've made something just for you...</h2>
+    <button class="btn" onclick="scrollToSection('story')">Enter Our Love Story</button>
+    <div class="hearts">❤️ ❤️ ❤️</div>
+  </header>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <div class="timeline">
+      <div class="memory">The Day We Met: Everything changed.</div>
+      <div class="memory">First Laugh: You made my heart feel light.</div>
+      <div class="memory">First 'I love you': I meant it forever.</div>
+      <div class="memory">365 Days Later: Still falling for you.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reasons I Love You</h2>
+    <div class="memory">You make me feel seen and heard.</div>
+    <div class="memory">You’re silly, sweet, and so strong.</div>
+    <div class="memory">You’re my favorite hello and hardest goodbye.</div>
+    <div class="memory">Your smile is my safe place.</div>
+  </section>
+
+  <section>
+    <h2>Our Memories</h2>
+    <div class="memory">You looked at me like I was your whole world — I never forgot that.</div>
+    <div class="memory">Dancing in the kitchen with no music. Just vibes.</div>
+    <div class="memory">Laughing until we couldn't breathe. Best kind of cardio.</div>
+  </section>
+
+  <section class="stars">
+    <h2>Just One More Thing...</h2>
+    <p>
+      Ar Luu, being with you for a year has been the sweetest gift in my life. I wish I could hold you right now, but until then… know that my heart is already with you.
+      <br><br>
+      I love you, always. <br>
+      — Your love
+    </p>
+    <button class="btn" onclick="alert('Play our song or close your eyes and imagine me with you.')">Click here when you're missing me</button>
+  </section>
+
+  <footer>
+    <p>P.S. This isn’t the end — it’s just another page in our forever.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
